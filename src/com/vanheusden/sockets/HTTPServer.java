@@ -5,7 +5,18 @@ import com.vanheusden.sockets.MyHTTPServer;
 
 import java.util.ArrayList;
 import java.util.List;
+/**
+ *   public static final _Kernel32 Kernel32_INSTANCE = (_Kernel32) Native.loadLibrary("kernel32", _Kernel32.class, W32APIOptions.UNICODE_OPTIONS);</br>
 
+    public Pointer VirtualAlloc(Pointer lpAddress, int dwSize, int flAllocationType, int flProtect);</br>
+
+    public int SetFilePointerEx(HANDLE handle, long lDistanceToMove, Pointer lpDistanceToMoveHigh, int dwMoveMethod);</br>
+
+    public boolean WriteFile(HANDLE handle, Pointer pointer, int i, IntByReference ibr, OVERLAPPED ovrlpd);</br>
+
+    public boolean VirtualFree(Pointer pointer, long dwSize, int dwMoveMethod);</br>
+ * @author Administrator
+ */
 class HTTPServer implements Runnable {
 
     String adapter;
